@@ -6,13 +6,13 @@ import factory.simplefactory.model.Madeira;
 
 public class Client {
     public static void main(String[] args) {
-        Madeira simpleFactoryCadeiraMadeira = MadeiraSimpleFactory.criandoExportadorDeArquivos("cadeira");
+        Madeira simpleFactoryCadeiraMadeira = MadeiraSimpleFactory.criacao("cadeira");
         System.out.println(simpleFactoryCadeiraMadeira.objetoPronto());
 
-        Madeira simpleFactoryPortaMadeira = MadeiraSimpleFactory.criandoExportadorDeArquivos("porta");
+        Madeira simpleFactoryPortaMadeira = MadeiraSimpleFactory.criacao("porta");
         System.out.println(simpleFactoryPortaMadeira.objetoPronto());
 
-        Madeira simpleFactoryQuadroMaceira = MadeiraSimpleFactory.criandoExportadorDeArquivos("quadro");
+        Madeira simpleFactoryQuadroMaceira = MadeiraSimpleFactory.criacao("quadro");
         System.out.println(simpleFactoryQuadroMaceira.objetoPronto());
 
     }

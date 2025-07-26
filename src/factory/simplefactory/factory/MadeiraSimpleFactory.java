@@ -7,13 +7,13 @@ import factory.simplefactory.model.Quadro;
 
 public class MadeiraSimpleFactory {
 
-    public static Madeira criandoExportadorDeArquivos(String tipoArquivo){
+    public static Madeira criacao(String tipoDeObjeto){
         Madeira objetoDeMadeira = null;
-        if(tipoArquivo.equals("quadro")){
+        if(tipoDeObjeto.equals("quadro")){
             objetoDeMadeira = new Quadro();
-        } else if (tipoArquivo.equals("porta")) {
+        } else if (tipoDeObjeto.equals("porta")) {
             objetoDeMadeira = new Porta();
-        } else if (tipoArquivo.equals("cadeira")) {
+        } else if (tipoDeObjeto.equals("cadeira")) {
             objetoDeMadeira = new Cadeira();
         }
 
